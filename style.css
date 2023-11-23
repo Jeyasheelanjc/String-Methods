@@ -53,3 +53,9 @@ button:active{
     80%  { background: #33CC36; }
     100% { background: #33CCCC; }
   }
+@media screen and (max-width:576px) {
+    .grid{
+     grid-template-columns: repeat(3,100px);
+
+    }
+}
