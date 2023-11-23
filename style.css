@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.stringMethod{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+}
+label{
+    width: 150px;
+}
+input{
+    width: 50%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,90px);
+    justify-content: center !important;
+    gap: 1rem;
+    padding: 20px 0;
+
+}
+button{
+    border: none;
+    color: white;
+    /* background-color: black; */
+    background-color:steelblue;
+    border-radius: 5px !important;
+
+}
+button:active{
+    filter: brightness(1.5) !important;
+    user-select: none;
+}
+.bar{
+  
+    padding: 20px 15px;
+    border-radius: 5px;
+
+}
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
